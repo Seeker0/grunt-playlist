@@ -2,20 +2,23 @@ $base-color: #777;
 $second-color: #333;
 $heading-font: Arial;
 
+@import "mixins";
+
 .element {
   width: 100px;
   height: 100px;
   background: black;
-  p{
+  p {
     color: $second-color;
   }
 }
 
-.link{
+.link {
   color: $second-color;
   font-size: 12px;
 }
 
-.heading{
+.heading {
   font-family: $heading-font;
+  @include ninjalink("blue", "red", "pink", "purple");
 }
